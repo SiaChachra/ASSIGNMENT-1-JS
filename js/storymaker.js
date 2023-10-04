@@ -15,6 +15,7 @@ var choosenVerb = document.getElementById('choosenVerb');
 var choosenAdjective = document.getElementById('choosenAdjective');
 var choosenNoun2 = document.getElementById('choosenNoun2');
 var choosenSetting = document.getElementById('choosenSetting');
+var studentNumber = document.getElementById("studentID");
 
 // Constants for final buttons and p tags
 var playbackButton = document.getElementById('playback');
@@ -22,11 +23,11 @@ var randomButton = document.getElementById('random');
 var storyElement = document.getElementById('story');
 
 // Variables for pre-defined arrays
-let nouns1 = ["The turkey", "The dog", "mom"];
-let verbs = ["danced with", "doesn't like", "sat on"];
-let adjectives = ["scary", "sad", "a goofy"];
-let nouns2 = ["ball", "worm", "computer"];
-let settings = ["in my spaghetti", "beach", "office"];
+let nouns1 = ["The turkey", "The dog", "mom", "dad", "My Teacher", "The Elephant", "The Cat"];
+let verbs = ["ate", "kissed", "saw", "danced", "with", "doesn't like", "sat on"];
+let adjectives = ["a scary", "a sad", "a goofy", "a slimy", "a fat", "a barking"];
+let nouns2 = ["goat", "monkey", "fish", "cow", "frog", "bug", "worm"];
+let settings = ["in my spaghetti", "on the moon", "in my soup", "on the grass", "on the chair"];
 
 // Variables for count to grab array elements
 let noun1Count = 0;
@@ -37,6 +38,11 @@ let settingCount = 0;
 
 /* Functions
 -------------------------------------------------- */
+
+
+function displayStudentNumber() {
+    studentId.textContent = "Student ID: 200547582";
+}
 
 function getRandomElement(arr) {
     return arr[Math.floor(Math.random() * arr.length)];
@@ -112,3 +118,4 @@ document.getElementById('setting').addEventListener('click', setting_on_click);
 document.getElementById('playback').addEventListener('click', playback_on_click);
 document.getElementById('random').addEventListener('click', random_on_click);
 document.getElementById('reset').addEventListener('click', resetStory);
+document.addEventListener('DOMContentLoaded', displayStudentNumber);
