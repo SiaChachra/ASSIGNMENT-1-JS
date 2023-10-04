@@ -4,26 +4,101 @@ body {
     background-color: aqua;
 }
 
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-image: linear-gradient(45deg, #FF5733, #007BFF);
+    /* Gradient from orange to blue */
+    color: #FFF;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    /* Shadow for depth */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    /*Text shadow for better visibility on gradient */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Smooth transitions on hover */
+}
+
+h1:hover {
+    transform: translateY(-5px) scale(1.05);
+    /* Moves up and slightly grows on hover */
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+    /* Increased shadow depth on hover */
+}
+
+h2 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-image: linear-gradient(315deg, #28B463, #FFC300);
+    /* Gradient from green to yellow */
+    color: #FFF;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    /* Shadow for depth */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    /* Text shadow for better visibility on gradient */
+    transition: background-image 0.3s ease;
+    /* Smooth transitions on hover */
+}
+
+h2:hover {
+    background-image: linear-gradient(45deg, #28B463, #FFC300);
+    /* Changes gradient direction on hover */
+}
+
+#studentId {
+    background-color: #f9f9f9;
+    /* Soft grey background */
+    border-left: 5px solid #007BFF;
+    /* Solid left border for a highlight effect */
+    padding: 10px 20px;
+    /* Spacing on all sides */
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    /* Spacing from the content below */
+}
+
+/* Styles for the button element */
 button {
     padding: 10px 15px;
+    /* Provides space inside the button */
     margin: 10px;
+    /* Provides space outside the button */
     cursor: pointer;
+    /* Changes cursor to pointer hand when hovered */
     background-color: #007BFF;
+    /* Sets the button's background color */
     color: #FFF;
+    /* Sets the text color inside the button to white */
     border: none;
+    /* Removes any borders */
     border-radius: 5px;
+    /* Gives the button rounded corners */
     transition: background-color 0.3s ease;
+    /* Smooth transition for background color change on hover */
 }
 
+/* Styles for the button element when it's hovered over */
 button:hover {
-    background-color: #0056b3;
+    background-color: rgb(172, 15, 15);
+    /* Changes the button's background color when hovered */
 }
 
+/* Styles for the paragraph element */
 p {
     margin: 10px 0;
+    /* Sets top and bottom margins to 10px, and left and right margins to 0 */
 }
 
+/* Specific styles for an element with the ID of 'story' */
 #story {
     font-weight: bold;
-    color: #007BFF;
+    /* Makes the text bold */
+    color: black;
+    /* Sets the text color to black */
 }
